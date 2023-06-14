@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <script defer src="src/script.js"></script>
+    <title>Reviews</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="overlay"></div>
+      <div class="add-review">
+        <div class="reviews-count">
+          <div class="stars-average"></div>
+          <div class="all-reviews-count"></div>
+        </div>
+        <div class="dropdown dropdown-sort">
+          <button class="btn btn-sort dropdown-btn dropdown-btn-sort">
+            Sort By
+          </button>
+          <div class="dropdown-menu dropdown-menu-sort closed">
+            <button class="btn btn-action btn-top-default">Default</button>
+            <button class="btn btn-action btn-top-rating">Top Rating</button>
+            <button class="btn btn-action btn-most-recent">Most Recent</button>
+          </div>
+        </div>
+
+        <div class="dropdown dropdown-filter">
+          <button class="btn btn-filter dropdown-btn dropdown-btn-filter">
+            Filter By
+          </button>
+          <div class="dropdown-menu dropdown-menu-filter closed">
+            <button class="btn btn-action btn-filter-by-5">5 Stars</button>
+            <button class="btn btn-action btn-filter-by-4-half-up">
+              4.5 Stars & Up
+            </button>
+            <button class="btn btn-action btn-filter-by-4-up">
+              4 Stars & Up
+            </button>
+            <button class="btn btn-action btn-filter-by-lower-than-4">
+              Lower than 4 Stars
+            </button>
+          </div>
+        </div>
+
+        <button class="btn write-review-btn">Write a review</button>
+      </div>
+      <form class="form hidden" autocomplete="off">
+        <ion-icon name="close" class="close-form-btn"></ion-icon>
+        <!-- <div class="close-form-btn">close</div> -->
+        <label for="img_url">img Url</label>
+        <input type="text" name="img_url" placeholder="img Url" />
+        <label for="full_name">full Name</label>
+        <input type="text" name="full_name" />
+        <label for="nb_stars">nb Stars</label>
+        <input type="text" name="nb_stars" />
+        <label for="review_text">Review</label>
+        <textarea name="review_text" id="" cols="30" rows="10"></textarea>
+        <button class="btn btn-submit" type="submit">Submit</button>
+      </form>
+
+      <div class="reviews-stats">
+        <div class="stats">
+          <div class="stat">
+            <div class="stars-val">5</div>
+            <div class="stars"></div>
+            <div class="rating-percentage percentage-5">0</div>
+          </div>
+        </div>
+        <div class="reviews">
+          <div class="review" data-id="">
+            <img src="" alt="" />
+            <div class="created-at">
+              <div class="cur-date"></div>
+              <img src="" alt="" class="country-flag" />
+            </div>
+            <div class="user">
+              <div class="full-name"></div>
+            </div>
+            <div class="stars"></div>
+            <div class="review-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
