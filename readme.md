@@ -1,6 +1,6 @@
 # Reviews App using Vanilla JS
 
-A cool reviews project, you can a review, sort and filter reviews.
+A cool reviews project, you can add a review, sort and filter reviews.
 
 Checkout src/script.js file to see the magic behind this cool app.
 
