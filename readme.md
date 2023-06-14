@@ -1,4 +1,4 @@
-\*\* Reviews App using Vanilla JS
+# Reviews App using Vanilla JS
 
 A cool reviews project, you can a review, sort and filter reviews.
 
